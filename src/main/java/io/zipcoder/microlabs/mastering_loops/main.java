@@ -8,6 +8,6 @@ public class main {
     public static void main(String[] args) {
         Numbers test = new Numbers();
 
-        System.out.println(test.oneToTen());
+        System.out.println(test.powers(8));
     }
 }
