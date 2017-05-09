@@ -6,8 +6,8 @@ package io.zipcoder.microlabs.mastering_loops;
 public class main {
 
     public static void main(String[] args) {
-        Numbers test = new Numbers();
+        CarRide test = new CarRide();
 
-        System.out.println(test.powers(8));
+        test.areWeThereYet();
     }
 }

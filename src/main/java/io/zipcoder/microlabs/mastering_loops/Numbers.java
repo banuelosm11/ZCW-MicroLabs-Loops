@@ -1,6 +1,8 @@
 package io.zipcoder.microlabs.mastering_loops;
 
 
+import java.util.Random;
+
 public class Numbers {
 
     public String oneToTen() {
@@ -39,16 +41,17 @@ public class Numbers {
         return output;
     }
 
-//    public String random4(){
-//
-//        String output = "*** Output ***\nrandom4()";
-//
-//        for(int i = 1; i < 11; i++){
-//            output = output + "\n" + ;
-//        }
-//
-//        return output;
-//    }
+    public String random4(){
+
+        String output = "*** Output ***\nrandom4()";
+        Random random = new Random();
+
+        for(int i = 1; i < 5; i++){
+            output = output + "\n" + (random.nextInt(10) + 1);
+        }
+
+        return output;
+    }
 
     public String even(int n){
 

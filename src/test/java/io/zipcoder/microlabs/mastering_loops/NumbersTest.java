@@ -44,18 +44,18 @@ public class NumbersTest {
         Assert.assertEquals("The two strings are equal", expected, actual);
     }
 
-//    @Test
-//    public void random4Test(){
-//        //: Given
-//        Numbers numbers = new Numbers();
-//        String expected = "*** Output ***\nrandom4()\n3\n5\n2\n8";
-//
-//        //: When
-//        String actual = numbers.random4();
-//
-//        //: Then
-//        Assert.assertEquals("The two strings are equal", expected, actual);
-//    }
+    @Test
+    public void random4Test(){
+        //: Given
+        Numbers numbers = new Numbers();
+        String expected = "*** Output ***\nrandom4()\n3\n5\n2\n8";
+
+        //: When
+        String actual = numbers.random4();
+
+        //: Then
+        Assert.assertEquals("The two strings are equal", expected, actual);
+    }
 
     @Test
     public void evenTest(){
