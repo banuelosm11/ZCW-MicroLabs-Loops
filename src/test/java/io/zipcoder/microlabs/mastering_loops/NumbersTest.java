@@ -18,49 +18,49 @@ public class NumbersTest {
         Assert.assertEquals("The two strings are equal", expected, actual);
     }
 
-    @Test
-    public void oddNumbersTest(){
-        //: Given
-
-        //: When
-
-        //: Then
-    }
-
-    @Test
-    public void squaresTest(){
-        //: Given
-
-        //: When
-
-        //: Then
-    }
-
-    @Test
-    public void random4Test(){
-        //: Given
-
-        //: When
-
-        //: Then
-    }
-
-    @Test
-    public void evenTest(){
-        //: Given
-
-        //: When
-
-        //: Then
-    }
-
-    @Test
-    public void powersTest(){
-        //: Given
-
-        //: When
-
-        //: Then
-    }
+//    @Test
+//    public void oddNumbersTest(){
+//        //: Given
+//
+//        //: When
+//
+//        //: Then
+//    }
+//
+//    @Test
+//    public void squaresTest(){
+//        //: Given
+//
+//        //: When
+//
+//        //: Then
+//    }
+//
+//    @Test
+//    public void random4Test(){
+//        //: Given
+//
+//        //: When
+//
+//        //: Then
+//    }
+//
+//    @Test
+//    public void evenTest(){
+//        //: Given
+//
+//        //: When
+//
+//        //: Then
+//    }
+//
+//    @Test
+//    public void powersTest(){
+//        //: Given
+//
+//        //: When
+//
+//        //: Then
+//    }
 
 }

@@ -3,8 +3,15 @@ package io.zipcoder.microlabs.mastering_loops;
 
 public class Numbers {
 
-    public String oneToTen(){
-        return "";
+    public String oneToTen() {
+
+        String output = "*** Output ***\noneToTen()";
+
+        for (int i = 1; i < 11; i++) {
+            output = output + "\n" + i ;
+        }
+
+        return output;
     }
 
     public String oddNumbers(){
