@@ -11,10 +11,14 @@ public class ShapesTest {
     @Test
     public void triangleTest(){
         //: Given
+        Shapes shape = new Shapes();
+        String expected = "*** Output ***\ntriangle()\n*\n**\n***\n****\n*****";
 
         //: When
+        String actual = shape.triangle();
 
         //: Then
+        Assert.assertEquals("The strings are equal", expected, actual);
     }
 
     @Test
