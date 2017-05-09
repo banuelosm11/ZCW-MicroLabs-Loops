@@ -44,20 +44,19 @@ public class NumbersTest {
         Assert.assertEquals("The two strings are equal", expected, actual);
     }
 
-    @Test
-    public void random4Test(){
-        //between 1 and 10 just testing if numbers are between 1 and 10
-        //: Given
-        Numbers numbers = new Numbers();
-        int num1 =
-        String expected = "*** Output ***\nrandom4()\n"+num1+"\n"+num2+"\n"+num3+2"\n"8";
-
-        //: When
-        String actual = numbers.random4();
-
-        //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
-    }
+//    @Test
+//    public void random4Test(){
+//        //between 1 and 10 just testing if numbers are between 1 and 10
+//        //: Given
+//        Numbers numbers = new Numbers();
+//        String expected = "*** Output ***\nrandom4()\n"+ num1 +"\n"+num2+"\n"+num3+"\n"+num4;
+//
+//        //: When
+//        String actual = numbers.random4();
+//
+//        //: Then
+//        Assert.assertEquals("The two strings are equal", expected, actual);
+//    }
 
     @Test
     public void evenTest(){

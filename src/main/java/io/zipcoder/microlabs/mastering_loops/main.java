@@ -6,8 +6,8 @@ package io.zipcoder.microlabs.mastering_loops;
 public class main {
 
     public static void main(String[] args) {
-        CarRide test = new CarRide();
+        Shapes test = new Shapes();
 
-        test.areWeThereYet();
+        System.out.println(test.triangle());
     }
 }
