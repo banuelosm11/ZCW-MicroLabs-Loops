@@ -54,7 +54,7 @@ public class NumbersTest {
 
         //: When
         String actual = numbers.random4();
-        String[] actLines = actual.split("\\r?\\n");
+        String[] actLines = actual.split("\n");
         String actualLine1 = actLines[0];
         String actualLine2 = actLines[1];
         int num1 = Integer.parseInt(actLines[2]);

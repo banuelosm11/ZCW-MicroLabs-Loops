@@ -12,7 +12,7 @@ public class ShapesTest {
     public void triangleTest(){
         //: Given
         Shapes shape = new Shapes();
-        String expected = "*** Output ***\ntriangle()\n*\n**\n***\n****\n*****";
+        String expected = "*** Output ***\ntriangle()\n*\n**\n***\n****\n*****\n";
 
         //: When
         String actual = shape.triangle();
@@ -25,8 +25,8 @@ public class ShapesTest {
     public void tableSquareTest(){
         //: Given
         Shapes shape = new Shapes();
-        String expected = "*** Output ***\ntableSquare()\nA 4 x 4 table square\n" +"| 1 |  2 |  3 |  4 |\n" + "| 2 |  4 |  6 |  8 |\n"
-                + "| 3 |  6 |  9 | 12 |\n" + "| 4 |  8 | 12 | 16 |";
+        String expected = "*** Output ***\ntableSquare()\nA 4 x 4 table square\n" +"| 1 | 2 |  3 |  4 |\n" + "| 2 | 4 |  6 |  8 |\n"
+                + "| 3 | 6 |  9 | 12 |\n" + "| 4 | 8 | 12 | 16 |\n";
 
         //: When
         String actual = shape.tableSquare();
@@ -35,18 +35,23 @@ public class ShapesTest {
         Assert.assertEquals("The strings are equal", expected, actual);
     }
 
-//    @Test
-//    public void tableSquaresTest(){
-//        //: Given
-//        Shapes shape = new Shapes();
-//        int n = 6;
-//        String expected = "*** Output ***\ntableSquare()\nA " + n +" x "+ n + " table square\n" +"| 1 |  2 |  3 |  4 |\n" + "| 2 |  4 |  6 |  8 |\n"
-//                + "| 3 |  6 |  9 | 12 |\n" + "| 4 |  8 | 12 | 16 |";
-//
-//        //: When
-//        String actual = shape.tableSquares(n);
-//
-//        //: Then
-//        Assert.assertEquals("The strings are equal", expected, actual);
-//    }
+    @Test
+    public void tableSquaresTest(){
+        //: Given
+        Shapes shape = new Shapes();
+        int n = 6;
+        String expected = "*** Output ***\ntableSquares()\nA " + n +" x "+ n + " table square\n" +
+                "| 1 |  2 |  3 |  4 |  5 |  6 |\n"+
+                "| 2 |  4 |  6 |  8 | 10 | 12 |\n"+
+                "| 3 |  6 |  9 | 12 | 15 | 18 |\n"+
+                "| 4 |  8 | 12 | 16 | 20 | 24 |\n"+
+                "| 5 | 10 | 15 | 20 | 25 | 30 |\n"+
+                "| 6 | 12 | 18 | 24 | 30 | 36 |\n";
+
+        //: When
+        String actual = shape.tableSquares(n);
+
+        //: Then
+        Assert.assertEquals("The strings are equal", expected, actual);
+    }
 }

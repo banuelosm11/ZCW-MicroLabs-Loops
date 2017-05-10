@@ -22,7 +22,16 @@ public class Shapes {
 
         for (int i = 1; i < 5; i++){
             for (int j = 1; j < 5; j++){
-                output = output + "| " + i*j + " ";
+                if(i*j >= 10) {
+                        output = output + "| " + i * j + " ";
+                }
+                else if (i*j < 10){
+                    if(j>=3) {
+                        output = output + "|  " + i * j + " ";
+                    }else{
+                        output = output + "| " + i * j + " ";
+                    }
+                }
             }
             output += "|\n";
         }
@@ -30,6 +39,25 @@ public class Shapes {
     }
 
     public String tableSquares(int n){
-        return "";
+
+        String output = "*** Output ***\ntableSquares()\nA " + n + " x " + n + " table square\n";
+
+        for (int i = 1; i < n+1; i++){
+            for (int j = 1; j < n+1; j++){
+                if(i*j >= 10) {
+                    output = output + "| " + i * j + " ";
+                }
+                else if (i*j < 10){
+                    if(j>=2) {
+                        output = output + "|  " + i * j + " ";
+                    }else{
+                        output = output + "| " + i * j + " ";
+                    }
+                }
+            }
+            output += "|\n";
+        }
+        return output;
+
     }
 }

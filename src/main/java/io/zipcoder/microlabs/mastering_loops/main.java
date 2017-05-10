@@ -12,6 +12,6 @@ public class main {
         Numbers nums = new Numbers();
         CarRide car = new CarRide();
 
-        System.out.println(test.tableSquare());
+        System.out.println(test.tableSquares(6));
     }
 }
