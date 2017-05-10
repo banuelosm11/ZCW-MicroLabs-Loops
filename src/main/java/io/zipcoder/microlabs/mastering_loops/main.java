@@ -12,7 +12,6 @@ public class main {
         Numbers nums = new Numbers();
         CarRide car = new CarRide();
 
-        System.out.println(test.triangle());
-        System.out.println(nums.random4());
+        System.out.println(test.tableSquare());
     }
 }

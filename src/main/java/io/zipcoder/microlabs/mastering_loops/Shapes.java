@@ -17,7 +17,16 @@ public class Shapes {
     }
 
     public String tableSquare(){
-        return "";
+
+        String output = "*** Output ***\ntableSquare()\nA 4 x 4 table square\n";
+
+        for (int i = 1; i < 5; i++){
+            for (int j = 1; j < 5; j++){
+                output = output + "| " + i*j + " ";
+            }
+            output += "|\n";
+        }
+        return output;
     }
 
     public String tableSquares(int n){
