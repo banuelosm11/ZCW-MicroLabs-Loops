@@ -13,7 +13,7 @@ public class Shapes {
             }
         output += "\n";
         }
-        return output;
+        return output.trim();
     }
 
     public String tableSquare(){
@@ -35,7 +35,7 @@ public class Shapes {
             }
             output += "|\n";
         }
-        return output;
+        return output.trim();
     }
 
     public String tableSquares(int n){
@@ -57,7 +57,7 @@ public class Shapes {
             }
             output += "|\n";
         }
-        return output;
+        return output.trim();
 
     }
 }

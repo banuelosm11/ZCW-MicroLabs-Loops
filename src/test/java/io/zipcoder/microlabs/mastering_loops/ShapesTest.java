@@ -12,7 +12,7 @@ public class ShapesTest {
     public void triangleTest(){
         //: Given
         Shapes shape = new Shapes();
-        String expected = "*** Output ***\ntriangle()\n*\n**\n***\n****\n*****\n";
+        String expected = "*** Output ***\ntriangle()\n*\n**\n***\n****\n*****";
 
         //: When
         String actual = shape.triangle();
@@ -26,7 +26,7 @@ public class ShapesTest {
         //: Given
         Shapes shape = new Shapes();
         String expected = "*** Output ***\ntableSquare()\nA 4 x 4 table square\n" +"| 1 | 2 |  3 |  4 |\n" + "| 2 | 4 |  6 |  8 |\n"
-                + "| 3 | 6 |  9 | 12 |\n" + "| 4 | 8 | 12 | 16 |\n";
+                + "| 3 | 6 |  9 | 12 |\n" + "| 4 | 8 | 12 | 16 |";
 
         //: When
         String actual = shape.tableSquare();
@@ -46,7 +46,7 @@ public class ShapesTest {
                 "| 3 |  6 |  9 | 12 | 15 | 18 |\n"+
                 "| 4 |  8 | 12 | 16 | 20 | 24 |\n"+
                 "| 5 | 10 | 15 | 20 | 25 | 30 |\n"+
-                "| 6 | 12 | 18 | 24 | 30 | 36 |\n";
+                "| 6 | 12 | 18 | 24 | 30 | 36 |";
 
         //: When
         String actual = shape.tableSquares(n);

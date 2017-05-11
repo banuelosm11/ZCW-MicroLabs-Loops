@@ -4,6 +4,7 @@ package io.zipcoder.microlabs.mastering_loops;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
 public class CarRideTest {
@@ -11,8 +12,10 @@ public class CarRideTest {
     @Test
     public void areWeThereYetTest(){
         //Given:
-        CarRide car = new CarRide ();
-        String expected = "\"Are we there yet?\"\n + No\n\"Are we there yet?\"\nSpoons\n\"Are we there yet?\"\nYes\nGood!";
+        String input = "No\nSpoons\nyes";
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(input.getBytes());
+        CarRide car = new CarRide (byteArrayInputStream);
+        String expected = "Good!";
 
         //When:
         String actual = car.areWeThereYet();

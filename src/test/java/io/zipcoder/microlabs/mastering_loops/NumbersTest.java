@@ -87,6 +87,7 @@ public class NumbersTest {
 
     @Test
     public void powersTest(){
+
         //: Given
         Numbers numbers = new Numbers();
         String expected = "*** Output ***\npowers(int n)\n2\n4\n8\n16\n32\n64\n128\n256";
