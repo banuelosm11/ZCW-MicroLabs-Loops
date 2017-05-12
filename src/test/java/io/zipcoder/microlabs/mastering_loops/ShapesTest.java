@@ -70,17 +70,18 @@ public class ShapesTest {
 
     }
 
-//    @Test
-//    public void addSpaceTest(){
-//        //Given
-//        Shapes shape = new Shapes();
-//        String expected = "";
-//
-//        //When
-//        String actual = shape.addSpace();
-//
-//        //Then
-//        Assert.assertEquals(expected, actual);
-//    }
+    @Test
+    public void addSpaceTest(){
+        //Given
+        Shapes shape = new Shapes();
+        String expected = " ";
+        int j = 1;
+
+        //When
+        String actual = shape.addSpace(j);
+
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 
 }

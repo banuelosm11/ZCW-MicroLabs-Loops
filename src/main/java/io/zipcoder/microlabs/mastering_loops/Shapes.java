@@ -62,7 +62,7 @@ public class Shapes {
         String space = " ";
         int jDigit = digitsInNumber(j);
 
-        for (int i = 0; i <jDigit-1 ; i--){
+        for (int i = 0; i <jDigit-1 ; i++){
             space += " ";
         }
         return space;
