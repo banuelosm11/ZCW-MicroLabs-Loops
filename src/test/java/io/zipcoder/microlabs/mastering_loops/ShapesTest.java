@@ -39,7 +39,7 @@ public class ShapesTest {
     public void tableSquaresTest(){
         //: Given
         Shapes shape = new Shapes();
-        int n = 6;
+        int n = 10;
         String expected = "*** Output ***\ntableSquares()\nA " + n +" x "+ n + " table square\n" +
                 "| 1 |  2 |  3 |  4 |  5 |  6 |\n"+
                 "| 2 |  4 |  6 |  8 | 10 | 12 |\n"+
@@ -54,4 +54,33 @@ public class ShapesTest {
         //: Then
         Assert.assertEquals("The strings are equal", expected, actual);
     }
+
+    @Test
+    public void digitsInNumberTest(){
+        //Given
+        int nums = 123;
+        Shapes shape = new Shapes();
+        int expected = 3;
+
+        //When
+        int actual = shape.digitsInNumber(nums);
+
+        //Then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+//    @Test
+//    public void addSpaceTest(){
+//        //Given
+//        Shapes shape = new Shapes();
+//        String expected = "";
+//
+//        //When
+//        String actual = shape.addSpace();
+//
+//        //Then
+//        Assert.assertEquals(expected, actual);
+//    }
+
 }
