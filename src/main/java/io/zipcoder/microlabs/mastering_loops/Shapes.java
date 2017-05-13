@@ -42,15 +42,9 @@ public class Shapes {
 
         String output = "*** Output ***\ntableSquares()\nA " + n + " x " + n + " table square\n";
 
-        for (int i = 1; i < n + 1; i++) {
-            for (int j = 1; j < n + 1; j++) {
-                if(digitsInNumber(i*j) > 1){
-                    output = output + "|" + " " + i * j + " ";
-                }else if(digitsInNumber(i*j) == 1 && digitsInNumber(j)==1){
-                    output = output + "|" + " " + i * j + " ";
-                }else if (digitsInNumber(i*j) == 1 && digitsInNumber(j)>1){
-                    output = output + "|" + addSpace(j) + i * j + " ";
-                }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                    output = output + "|" + addSpace((i*j), (j*n)) + (i * j) + " ";
             }
             output += "|\n";
         }
@@ -58,20 +52,19 @@ public class Shapes {
         return output.trim();
     }
 
-    public String addSpace(int j){
+    public String addSpace(int currentNum, int lastNumInCol){
         String space = " ";
-        int jDigit = digitsInNumber(j);
+        int diff = digitsInNumber(lastNumInCol)-digitsInNumber(currentNum);
 
-        for (int i = 0; i <jDigit-1 ; i++){
+        for (int i = 0; i < diff ; i++){
             space += " ";
         }
         return space;
     }
 
-    int length;
+
     public int digitsInNumber(int num){
-        length = (int)(Math.log10(num)+1);
-        return length;
+        return (int)(Math.log10(num)+1);
     }
 
 }

@@ -75,10 +75,11 @@ public class ShapesTest {
         //Given
         Shapes shape = new Shapes();
         String expected = " ";
-        int j = 1;
+        int currentNum = 1;
+        int lastNumInCol = 9;
 
         //When
-        String actual = shape.addSpace(j);
+        String actual = shape.addSpace(currentNum, lastNumInCol);
 
         //Then
         Assert.assertEquals(expected, actual);
