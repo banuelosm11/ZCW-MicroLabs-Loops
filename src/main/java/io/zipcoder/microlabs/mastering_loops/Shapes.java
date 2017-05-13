@@ -48,7 +48,6 @@ public class Shapes {
             }
             output += "|\n";
         }
-        System.out.println(output);
         return output.trim();
     }
 

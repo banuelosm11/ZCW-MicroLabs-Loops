@@ -39,7 +39,7 @@ public class ShapesTest {
     public void tableSquaresTest(){
         //: Given
         Shapes shape = new Shapes();
-        int n = 10;
+        int n = 6;
         String expected = "*** Output ***\ntableSquares()\nA " + n +" x "+ n + " table square\n" +
                 "| 1 |  2 |  3 |  4 |  5 |  6 |\n"+
                 "| 2 |  4 |  6 |  8 | 10 | 12 |\n"+
